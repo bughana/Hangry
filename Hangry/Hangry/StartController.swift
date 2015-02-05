@@ -51,5 +51,13 @@ class StartController: UIViewController {
         UIGraphicsEndImageContext()
         return image
     }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "pushRestaurantDetails") {
+            let restaurantDetailsController = segue.destinationViewController as RestaurantDetailsController
+            let randomIndex = Int(arc4random_uniform(UInt32(restaurants.count)))
+            restaurantDetailsController.restaurant = restaurants[randomIndex]
+        }
+    }
 }
 

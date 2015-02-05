@@ -14,7 +14,7 @@ class RestaurantDetailsController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var restaurantNameLabel: UILabel!
     @IBOutlet weak var infoBackgroundView: UIView!
-    let restaurant: Restaurant?
+    var restaurant: Restaurant?
 
     init(restaurant: Restaurant) {
         super.init()
@@ -31,9 +31,11 @@ class RestaurantDetailsController: UIViewController {
         self.view.backgroundColor = UIColor.lightGrayColor()
         mapView.backgroundColor = UIColor.redColor()
 
+        restaurantNameLabel.text = restaurant?.name
+
         let location = CLLocationCoordinate2D(
-            latitude: 52.5086994,
-            longitude: 13.3919002
+            latitude: restaurant!.lat,
+            longitude: restaurant!.lon
         )
         let span = MKCoordinateSpanMake(0.01, 0.01)
         let region = MKCoordinateRegion(center: location, span: span)
@@ -42,8 +44,7 @@ class RestaurantDetailsController: UIViewController {
 
         let annotation = MKPointAnnotation()
         annotation.setCoordinate(location)
-        annotation.title = "Futurice Office"
-        annotation.subtitle = "is cool"
+        annotation.title = restaurant?.name
         mapView.addAnnotation(annotation)
     }
 
