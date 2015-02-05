@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F21C4B11A83E61100B365DE /* RestaurantDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F21C4B01A83E61100B365DE /* RestaurantDetailsController.swift */; };
+		7F6D4FC51A83F25C0004B6A7 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D4FC41A83F25C0004B6A7 /* Restaurant.swift */; };
 		7FAEEA921A83D6AB00E04A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAEEA911A83D6AB00E04A77 /* AppDelegate.swift */; };
-		7FAEEA941A83D6AB00E04A77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAEEA931A83D6AB00E04A77 /* ViewController.swift */; };
+		7FAEEA941A83D6AB00E04A77 /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAEEA931A83D6AB00E04A77 /* StartController.swift */; };
 		7FAEEA971A83D6AB00E04A77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAEEA951A83D6AB00E04A77 /* Main.storyboard */; };
 		7FAEEA991A83D6AB00E04A77 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FAEEA981A83D6AB00E04A77 /* Images.xcassets */; };
 		7FAEEA9C1A83D6AB00E04A77 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FAEEA9A1A83D6AB00E04A77 /* LaunchScreen.xib */; };
 		7FAEEAA81A83D6AB00E04A77 /* HangryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAEEAA71A83D6AB00E04A77 /* HangryTests.swift */; };
+		7FCC42991A83E91E00F57CDF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FCC42981A83E91E00F57CDF /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +29,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F21C4B01A83E61100B365DE /* RestaurantDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsController.swift; sourceTree = "<group>"; };
+		7F6D4FC41A83F25C0004B6A7 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		7FAEEA8C1A83D6AB00E04A77 /* Hangry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAEEA901A83D6AB00E04A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FAEEA911A83D6AB00E04A77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7FAEEA931A83D6AB00E04A77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7FAEEA931A83D6AB00E04A77 /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
 		7FAEEA961A83D6AB00E04A77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FAEEA981A83D6AB00E04A77 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7FAEEA9B1A83D6AB00E04A77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7FAEEAA11A83D6AB00E04A77 /* HangryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HangryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAEEAA61A83D6AB00E04A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FAEEAA71A83D6AB00E04A77 /* HangryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangryTests.swift; sourceTree = "<group>"; };
+		7FCC42981A83E91E00F57CDF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FCC42991A83E91E00F57CDF /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +66,7 @@
 		7FAEEA831A83D6AB00E04A77 = {
 			isa = PBXGroup;
 			children = (
+				7FCC42981A83E91E00F57CDF /* MapKit.framework */,
 				7FAEEA8E1A83D6AB00E04A77 /* Hangry */,
 				7FAEEAA41A83D6AB00E04A77 /* HangryTests */,
 				7FAEEA8D1A83D6AB00E04A77 /* Products */,
@@ -78,11 +86,13 @@
 			isa = PBXGroup;
 			children = (
 				7FAEEA911A83D6AB00E04A77 /* AppDelegate.swift */,
-				7FAEEA931A83D6AB00E04A77 /* ViewController.swift */,
+				7FAEEA931A83D6AB00E04A77 /* StartController.swift */,
 				7FAEEA951A83D6AB00E04A77 /* Main.storyboard */,
 				7FAEEA981A83D6AB00E04A77 /* Images.xcassets */,
 				7FAEEA9A1A83D6AB00E04A77 /* LaunchScreen.xib */,
 				7FAEEA8F1A83D6AB00E04A77 /* Supporting Files */,
+				7F21C4B01A83E61100B365DE /* RestaurantDetailsController.swift */,
+				7F6D4FC41A83F25C0004B6A7 /* Restaurant.swift */,
 			);
 			path = Hangry;
 			sourceTree = "<group>";
@@ -212,7 +222,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FAEEA941A83D6AB00E04A77 /* ViewController.swift in Sources */,
+				7F6D4FC51A83F25C0004B6A7 /* Restaurant.swift in Sources */,
+				7FAEEA941A83D6AB00E04A77 /* StartController.swift in Sources */,
+				7F21C4B11A83E61100B365DE /* RestaurantDetailsController.swift in Sources */,
 				7FAEEA921A83D6AB00E04A77 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +417,7 @@
 				7FAEEAAD1A83D6AB00E04A77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FAEEAAE1A83D6AB00E04A77 /* Build configuration list for PBXNativeTarget "HangryTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +426,7 @@
 				7FAEEAB01A83D6AB00E04A77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
