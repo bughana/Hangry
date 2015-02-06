@@ -65,6 +65,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F6D4FCA1A84BDD00004B6A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F6D4FC41A83F25C0004B6A7 /* Restaurant.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7F6D4FCB1A84BDD80004B6A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7FAEEA931A83D6AB00E04A77 /* StartController.swift */,
+				7F21C4B01A83E61100B365DE /* RestaurantDetailsController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7F6D4FCC1A84BE110004B6A7 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				7F6D4FC81A840F2D0004B6A7 /* Hangry-app-icon.png */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
 		7FAEEA831A83D6AB00E04A77 = {
 			isa = PBXGroup;
 			children = (
@@ -87,15 +112,14 @@
 		7FAEEA8E1A83D6AB00E04A77 /* Hangry */ = {
 			isa = PBXGroup;
 			children = (
+				7F6D4FCC1A84BE110004B6A7 /* Ressources */,
+				7F6D4FCB1A84BDD80004B6A7 /* View */,
+				7F6D4FCA1A84BDD00004B6A7 /* Model */,
 				7FAEEA911A83D6AB00E04A77 /* AppDelegate.swift */,
-				7F6D4FC81A840F2D0004B6A7 /* Hangry-app-icon.png */,
-				7FAEEA931A83D6AB00E04A77 /* StartController.swift */,
 				7FAEEA951A83D6AB00E04A77 /* Main.storyboard */,
 				7FAEEA981A83D6AB00E04A77 /* Images.xcassets */,
 				7FAEEA9A1A83D6AB00E04A77 /* LaunchScreen.xib */,
 				7FAEEA8F1A83D6AB00E04A77 /* Supporting Files */,
-				7F21C4B01A83E61100B365DE /* RestaurantDetailsController.swift */,
-				7F6D4FC41A83F25C0004B6A7 /* Restaurant.swift */,
 			);
 			path = Hangry;
 			sourceTree = "<group>";
