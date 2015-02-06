@@ -13,6 +13,7 @@ class RestaurantDetailsController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var restaurantNameLabel: UILabel!
+    @IBOutlet weak var restaurantAddressLabel: UILabel!
     @IBOutlet weak var infoBackgroundView: UIView!
     var restaurant: Restaurant?
 
@@ -32,6 +33,7 @@ class RestaurantDetailsController: UIViewController {
         mapView.backgroundColor = UIColor.redColor()
 
         restaurantNameLabel.text = restaurant?.name
+        restaurantAddressLabel.text = "\(restaurant!.street) \(restaurant!.streetNumber), \(restaurant!.city) \(restaurant!.district)"
 
         let location = CLLocationCoordinate2D(
             latitude: restaurant!.lat,

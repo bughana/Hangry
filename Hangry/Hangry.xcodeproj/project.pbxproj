@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7F21C4B11A83E61100B365DE /* RestaurantDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F21C4B01A83E61100B365DE /* RestaurantDetailsController.swift */; };
 		7F6D4FC51A83F25C0004B6A7 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6D4FC41A83F25C0004B6A7 /* Restaurant.swift */; };
+		7F6D4FC91A840F2D0004B6A7 /* Hangry-app-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F6D4FC81A840F2D0004B6A7 /* Hangry-app-icon.png */; };
 		7FAEEA921A83D6AB00E04A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAEEA911A83D6AB00E04A77 /* AppDelegate.swift */; };
 		7FAEEA941A83D6AB00E04A77 /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAEEA931A83D6AB00E04A77 /* StartController.swift */; };
 		7FAEEA971A83D6AB00E04A77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FAEEA951A83D6AB00E04A77 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		7F21C4B01A83E61100B365DE /* RestaurantDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailsController.swift; sourceTree = "<group>"; };
 		7F6D4FC41A83F25C0004B6A7 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		7F6D4FC81A840F2D0004B6A7 /* Hangry-app-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hangry-app-icon.png"; sourceTree = "<group>"; };
 		7FAEEA8C1A83D6AB00E04A77 /* Hangry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAEEA901A83D6AB00E04A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FAEEA911A83D6AB00E04A77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				7FAEEA911A83D6AB00E04A77 /* AppDelegate.swift */,
+				7F6D4FC81A840F2D0004B6A7 /* Hangry-app-icon.png */,
 				7FAEEA931A83D6AB00E04A77 /* StartController.swift */,
 				7FAEEA951A83D6AB00E04A77 /* Main.storyboard */,
 				7FAEEA981A83D6AB00E04A77 /* Images.xcassets */,
@@ -205,6 +208,7 @@
 				7FAEEA971A83D6AB00E04A77 /* Main.storyboard in Resources */,
 				7FAEEA9C1A83D6AB00E04A77 /* LaunchScreen.xib in Resources */,
 				7FAEEA991A83D6AB00E04A77 /* Images.xcassets in Resources */,
+				7F6D4FC91A840F2D0004B6A7 /* Hangry-app-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,19 +17,17 @@ class StartController: UIViewController {
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
-        var restaurant1 = Restaurant(name: "Ishin", lat: 52.507970, lon: 13.392432)
-        var restaurant2 = Restaurant(name: "Viet Bowl", lat: 52.508057, lon: 13.392765)
-        var restaurant3 = Restaurant(name: "Caramel", lat: 52.507745, lon: 13.393023)
-        var restaurant4 = Restaurant(name: "Corner Pizza", lat: 52.506967, lon: 13.392218)
+        var restaurant1 = Restaurant(name: "Ishin", lat: 52.507970, lon: 13.392432, street:"Charlottenstraße", streetNumber:"16", district:"Mitte", city:"Berlin")
+        var restaurant2 = Restaurant(name: "Viet Bowl", lat: 52.508057, lon: 13.392765, street:"Charlottenstraße", streetNumber:"16", district:"Mitte", city:"Berlin")
+        var restaurant3 = Restaurant(name: "Caramel", lat: 52.507745, lon: 13.393023, street:"Charlottenstraße", streetNumber:"16", district:"Mitte", city:"Berlin")
+        var restaurant4 = Restaurant(name: "Corner Pizza", lat: 52.506967, lon: 13.392218, street:"Charlottenstraße", streetNumber:"16", district:"Mitte", city:"Berlin")
         self.restaurants = [restaurant1, restaurant2, restaurant3, restaurant4]
-        println("test")
-
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var buttonBackground: UIImage = self.getImageWithColor(UIColor.lightGrayColor(), size: CGSizeMake(100, 40))
+        var buttonBackground: UIImage = UIImage(named: "Hangry-app-icon")!
         button.setBackgroundImage(buttonBackground, forState: UIControlState.Normal)
     }
 
@@ -40,16 +38,6 @@ class StartController: UIViewController {
     
     @IBAction func showRestaurantSuggestion(sender: AnyObject) {
         self.performSegueWithIdentifier("pushRestaurantDetails", sender: self)
-    }
-
-    func getImageWithColor(color: UIColor, size: CGSize) -> UIImage {
-        var rect = CGRectMake(0, 0, size.width, size.height)
-        UIGraphicsBeginImageContextWithOptions(size, false, 0)
-        color.setFill()
-        UIRectFill(rect)
-        var image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return image
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
